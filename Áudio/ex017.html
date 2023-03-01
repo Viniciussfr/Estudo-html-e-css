@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio</title>
+</head>
+<body>
+    <h1>Audios no site</h1>
+    <h2>Existem duas formas de anexar o audio em seu site:</h2>
+    <p>A primeira de uma maneira mais simples, colocasse o conteudo entre &ltaudio src &#8332 local do arquivo &gt &lt/audio&gt </p>
+    <audio src="audio/spark.mp3"controls loop></audio>
+    <p>A segunda forma um pouco mais complexa, porem ela possibilita a conversão de um tipo de arquivo para outro, benificiando o usuario caso seu navegador não permita a reprodução do arquivo em determinado tipo. Para executar basta colocar &ltaudio preload &#8332 "metadata ou autoplay ou none" pode adicionar tambem o controls, autoplay, loop ..&gt 
+        &ltsource src &#8332"local do audio.tipo do audio" type&#8332"audio/tipodoarquivo"&gt ;
+        Para fazer a conversão basta colocar o mesmo trecho de codigo so alterando o tipo de audio..
+    </p>
+    <audio preload="metadata" controls>
+        <source src="audio/spark.mp3" type="audio/mpeg">
+        <source src="audio/spark.ogg" type="audio/ogg">
+        <source src="audio/spark.wav" type="audio/wav">
+    </audio>
+
+</body>
+</html>
